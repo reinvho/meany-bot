@@ -15,8 +15,8 @@ exports.run = (client, message, args) => {
     let user = message.mentions.members.first()
  
     if (!user) return message.reply('**Kimi kayıt edeceğimi yazmadın!**').catch(console.error);
-    user.addRole("753264864570376222");
-    user.removeRole("753264866298429630")
+    user.addRole("833473296690315294");
+    user.removeRole("833473321373925427")
  
     const embed = new Discord.RichEmbed()
         .setDescription(`${user} kullanıcısı ${yetkili} tarafından başarıyla kayıt edildi!`)
