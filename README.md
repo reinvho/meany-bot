@@ -1,2 +1,2 @@
-# meany-bot
-meany-bot
+# Menay-Bot
+Menay-Bot
