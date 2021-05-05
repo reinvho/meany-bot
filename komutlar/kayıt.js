@@ -20,8 +20,7 @@ let steam = args[2]
 if(!hex) return message.reply('Hex ID Belirt.')
 if(!steam) return message.reply('Steam Profil Linki Belirt.')
  
-peepo.roles.add(kayıtlı)
-peepo.roles.remove(kayıtsız)
+
 
 db.add(`kayıtSayi.${message.author.id}`, 1)
 db.add(`erkekUye.${message.author.id}`, 1)
@@ -41,6 +40,9 @@ const embed = new Discord.MessageEmbed()
 .setFooter(`peepoV | Kayıt Sistemi`)
 .setColor('0x54a01c')
 client.channels.cache.get('839533955446997009').send(embed)
+ 
+ peepo.roles.add(kayıtlı)
+ peepo.roles.remove(kayıtsız)
   
 }
 
