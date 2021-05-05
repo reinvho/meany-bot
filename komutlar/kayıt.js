@@ -14,14 +14,14 @@ if(!kayıtsız) return message.reply('Kayıtsız Rolü Ayarlanmamış.')
   
 let member = message.mentions.users.first() || client.users.cache.get(args.join(' '))
 if(!member) return message.channel.send('Kimi Kayıt Etmem Gerekiyor ?')
+let peepo = message.guild.member(member)
 let hex = args[1]
 let steam = args[2]
 if(!hex) return message.reply('Hex ID Belirt.')
 if(!steam) return message.reply('Steam Profil Linki Belirt.')
-
- message.member.roles.add(kayıtlı);
- message.member.roles.add(kayıtsız); 
-
+ 
+peepo.roles.add(kayıtlı)
+peepo.roles.remove(kayıtsız)
 
 db.add(`kayıtSayi.${message.author.id}`, 1)
 db.add(`erkekUye.${message.author.id}`, 1)
@@ -40,9 +40,8 @@ const embed = new Discord.MessageEmbed()
 
 .setFooter(`peepoV | Kayıt Sistemi`)
 .setColor('0x54a01c')
-client.channels.cache.get('839533955446997009').send(embed)
- 
-
+client.channels.cache.get('781918168867536956').send(embed)
+  
 }
 
 exports.conf = {
