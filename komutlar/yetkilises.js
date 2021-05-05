@@ -11,7 +11,7 @@ return message.channel.send(new Discord.MessageEmbed().setDescription(`${message
   
   let peepo = "**Sesli Kanalda Olan Yetkililer:**\n";
   let peepo2 = "**Sesli Kanalda Olmayan Yetkililer:**\n";
-  message.guild.roles.cache.get("778587245304348692").members.map(r => {
+  message.guild.roles.cache.get("839533953601765377").members.map(r => {
     peepo += r.voice.channel ? "•  <@" + r.user.id + ">\n" : "";
     peepo2 += !r.voice.channel ? "•  <@" + r.user.id + ">\n" : "";
   });
