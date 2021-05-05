@@ -6,8 +6,8 @@ exports.run = async (client, message, args) => {
  if(!['778587245304348692'].some(role => message.member.roles.cache.get(role)) && !message.member.hasPermission('ADMINISTRATOR')) return message.reply(`Bu Komut İçin Yetkiniz Bulunmamaktadır.`) 
   
 let tag = ""
-const kayıtlı = message.guild.roles.cache.find(r => r.id === '748473981799104582')
-const kayıtsız = message.guild.roles.cache.find(r => r.id === '748473855852544050')
+const kayıtlı = message.guild.roles.cache.find(r => r.id === '839533952964231218')
+const kayıtsız = message.guild.roles.cache.find(r => r.id === '839533952943652904')
 
 if(!kayıtlı) return message.reply('Kayıtlı Rolü Ayarlanmamış.') 
 if(!kayıtsız) return message.reply('Kayıtsız Rolü Ayarlanmamış.') 
@@ -40,7 +40,7 @@ const embed = new Discord.MessageEmbed()
 
 .setFooter(`peepoV | Kayıt Sistemi`)
 .setColor('0x54a01c')
-client.channels.cache.get('781918168867536956').send(embed)
+client.channels.cache.get('839533955446997009').send(embed)
   
 }
 
