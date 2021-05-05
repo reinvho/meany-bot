@@ -38,7 +38,7 @@ const embed = new Discord.MessageEmbed()
     .addField(`<:peepoGunHolster:781441838845526016> **Steam Profil Linki** :`, "**```" + `${steam}` + "```**" + `Olarak Belirtildi`) 
     .addField(`<a:peepoShy:781441831605895188> **Yetkili Toplam** :`, "**```" + `${kayıtlar}` + "```**" + `Kayıtlara Sahip.`)
 
-.setFooter(`peepoV | Kayıt Sistemi`)
+.setFooter(`Vist | Kayıt Sistemi`)
 .setColor('0x54a01c')
 client.channels.cache.get('839533955446997009').send(embed)
   
