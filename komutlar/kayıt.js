@@ -40,7 +40,7 @@ const embed = new Discord.MessageEmbed()
 
 .setFooter(`peepoV | Kayıt Sistemi`)
 .setColor('0x54a01c')
-client.channels.cache.get('781918168867536956').send(embed)
+client.channels.cache.get('839533955446997009').send(embed)
   
 }
 
