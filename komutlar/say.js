@@ -6,11 +6,11 @@ module.exports.run = (client, message, args) => {
 
 
   let tag = "";
-  const booster = message.guild.roles.cache.get("752275694058471435").members.size
-  const whitelist = message.guild.roles.cache.get("748473981799104582").members.size
-  const nowhitelist = message.guild.roles.cache.get("748473855852544050").members.size
-  const girebilir = message.guild.roles.cache.get("781457534342660116").members.size
-  const yetkili = message.guild.roles.cache.get("778587245304348692").members.size
+  const booster = message.guild.roles.cache.get("839533953617887239").members.size
+  const whitelist = message.guild.roles.cache.get("839533952964231218").members.size
+  const nowhitelist = message.guild.roles.cache.get("839533952943652904").members.size
+  const girebilir = message.guild.roles.cache.get("839533952964231218").members.size
+  const yetkili = message.guild.roles.cache.get("839533953601765377").members.size
   const online = message.guild.members.cache.filter(u => u.presence.status != "offline").size
   const toplam = message.guild.memberCount
   const ses = message.guild.channels.cache.filter(channel => channel.type == "voice").map(channel => channel.members.size).reduce((a, b) => a + b) 
