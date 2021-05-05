@@ -1,0 +1,26 @@
+{
+  "prefix" : "p!",
+  "sahip" : "sahibin-client-idsi",
+  "token" : "sizin-tokeniniz",
+  
+  "yetkili" : "yetkili-rol-id",
+  
+  
+  "BanYetkilisi": "ban-yetkili-rol-idsi",
+  "BanKanal": "ban-log-kanal-idsi",
+    
+  
+  
+  
+  "CezaYetkilisi": "cezayetkilirolidsi", 
+  "CezalıRol": "cezalı-rol-idsi", 
+  "CezaKanal": "ceza-logkanal-idsi",
+  
+  
+  
+  
+  "MuteYetkilisi": "mute-yetkili-rol-idsi",
+  "MuteliRol": "muted-rol-idsi",
+  "MuteKanal": "mute-log-kanal-idsi"
+  
+}
